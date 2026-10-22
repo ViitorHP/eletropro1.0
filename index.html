@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="utf-8">
+        <title>EletroPro - Serviços Elétricos Profissionais</title>
+        <link rel="icon" href="img/logo1.png" type="img/png">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Serviços elétricos residenciais, comerciais e industriais" name="keywords">
+        <meta content="Eletricista credenciado para instalações, manutenções e reparos elétricos de alta qualidade." name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Carregando...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary"><img src="img/logo.png"></i>EletroPro</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Início</a>
+                        <a href="about.html" class="nav-item nav-link">Sobre Nós</a>
+                        <a href="service.html" class="nav-item nav-link">Serviços</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <!--<div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="feature.html" class="dropdown-item">Diferenciais</a>
+                                <a href="product.html" class="dropdown-item">Produtos e Materiais</a>
+                                <a href="team.html" class="dropdown-item">Nossa Equipe</a>
+                                <a href="testimonial.html" class="dropdown-item">Depoimentos</a>
+                                <a href="404.html" class="dropdown-item">Página 404</a>
+                            </div>
+                        </div> -->
+                        <a href="contact.html" class="nav-item nav-link">Contato</a>
+                    </div>
+                    <div class="d-none d-xl-flex me-3">
+                        <div class="d-flex flex-column pe-3 border-end border-primary">
+                            <span class="text-body">Atendimento 24 horas</span>
+                            <a href="tel:+5511999999999"><span class="text-primary">Ligue: (11) 99999-9999</span></a>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-md-square d-flex flex-shrink-0 mb-3 mb-lg-0 rounded-circle me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                    <a href="contact.html" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Pedir Orçamento</a>
+                    <!-- Botão Modo Escuro -->
+<button id="darkModeToggle" class="btn btn-outline-primary btn-md-square rounded-circle" style="margin-top: 15px; margin-bottom: 15px; margin-left: 15px; margin-right: 15px;">
+    <i class="fas fa-moon"></i>
+</button>
+                </div>
+            </nav>
+
+            <!-- Carousel Start -->
+            <div class="carousel-header">
+                <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="img/c.jfif" class="img-fluid w-100" alt="Instalação Elétrica">
+                            <div class="carousel-caption-1">
+                                <div class="carousel-caption-1-content" style="max-width: 900px;">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s; letter-spacing: 3px;">Segurança & Eficiência</h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.3s" style="animation-delay: 1.3s;">Soluções Elétricas Profissionais Para Sua Casa e Empresa</h1>
+                                    <p class="mb-5 fs-5 text-white fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.5s" style="animation-delay: 1.5s;">Garantimos instalações e manutenções elétricas seguras, seguindo todas as normas técnicas da NBR 5410 com atendimento rápido e garantido.
+                                    </p>
+                                    <div class="carousel-caption-1-content-btn fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.7s" style="animation-delay: 1.7s;">
+                                        <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="contact.html">Solicitar Eletricista</a>
+                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="service.html">Orçamento Grátis</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Manutenção Elétrica">
+                            <div class="carousel-caption-2">
+                                <div class="carousel-caption-2-content" style="max-width: 900px;">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s; letter-spacing: 3px;">Atendimento de Urgência</h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1.3s" style="animation-delay: 1.3s;">Reparo Rápido de Curtos e Tomadas Sem Energia</h1>
+                                    <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1.5s" style="animation-delay: 1.5s;">Precisa de auxílio imediato? Nossa equipe de eletricistas qualificados está pronta para resolver qualquer emergência elétrica com agilidade.
+                                    </p>
+                                    <div class="carousel-caption-2-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
+                                        <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="contact.html">Chamar Agora</a>
+                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="about.html">Conhecer Serviços</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon btn btn-primary fadeInLeft animated" aria-hidden="true" data-animation="fadeInLeft" data-delay="1.1s" style="animation-delay: 1.3s;"> <i class="fa fa-angle-left fa-3x"></i></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                        <span class="carousel-control-next-icon btn btn-primary fadeInRight animated" aria-hidden="true" data-animation="fadeInLeft" data-delay="1.1s" style="animation-delay: 1.3s;"><i class="fa fa-angle-right fa-3x"></i></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Carousel End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Pesquisar por serviço</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="Digite o que procura (ex: disjuntor, iluminação, fiação...)" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text btn border p-3"><i class="fa fa-search text-white"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+        <!-- feature Start -->
+        <div class="container-fluid feature bg-light py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-uppercase text-primary">Nossos Diferenciais</h4>
+                    <h1 class="display-3 text-capitalize mb-3">Sua Segurança Elétrica em Primeiro Lugar</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon mb-3"><i class="fas fa-user-shield text-white fa-3x"></i></div>
+                            <a href="#" class="h4 mb-3">Eletricistas Certificados</a>
+                            <p class="mb-3">Profissionais treinados conforme as normas NR10 e NR35 para máxima proteção.</p>
+                            <a href="#" class="btn text-secondary">Saiba mais <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon mb-3"><i class="fas fa-tools text-white fa-3x"></i></div>
+                            <a href="#" class="h4 mb-3">Equipamentos de Ponta</a>
+                            <p class="mb-3">Utilizamos ferramentas de diagnóstico de precisão para detectar falhas e curtos com rapidez.</p>
+                            <a href="#" class="btn text-secondary">Saiba mais <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon mb-3"><i class="fas fa-clock text-white fa-3x"></i></div>
+                            <a href="#" class="h4 mb-3">Atendimento Rápido</a>
+                            <p class="mb-3">Atendemos chamados urgentes para você não ficar sem luz nem com riscos de sobrecarga.</p>
+                            <a href="#" class="btn text-secondary">Saiba mais <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon mb-3"><i class="fas fa-award text-white fa-3x"></i></div>
+                            <a href="#" class="h4 mb-3">Garantia nos Serviços</a>
+                            <p class="mb-3">Oferecemos garantia completa e laudo técnico para todos os serviços realizados.</p>
+                            <a href="#" class="btn text-secondary">Saiba mais <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- feature End -->
+
+        <!-- About Start -->
+        <div class="container-fluid about overflow-hidden py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="about-img rounded h-100">
+                            <img src="img/about.jpg" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="Eletricista Trabalhando">
+                            <div class="about-exp"><span>1 Anos de Experiência</span></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="about-item">
+                            <h4 class="text-primary text-uppercase">Sobre Nós</h4>
+                            <h1 class="display-3 mb-3">Especialistas em Soluções Elétricas Seguras.</h1>
+                            <p class="mb-4">Atuamos no segmento de serviços elétricos residenciais, comerciais e industriais. Contamos com vasta experiência na instalação de quadros de distribuição, cabeamento estruturado, iluminação em LED e prevenção de acidentes elétricos.
+                            </p>
+                            <div class="bg-light rounded p-4 mb-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex">
+                                            <div class="pe-4">
+                                                <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;"><i class="fas fa-smile text-white fa-2x"></i></div>
+                                            </div>
+                                            <div class="">
+                                                <a href="#" class="h4 d-inline-block mb-3">Clientes Satisfeitos</a>
+                                                <p class="mb-0">Centenas de clientes atendidos com total transparência e alta satisfação nos resultados.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-light rounded p-4 mb-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex">
+                                            <div class="pe-4">
+                                                <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;"><i class="fas fa-check-circle text-white fa-2x"></i></div>
+                                            </div>
+                                            <div class="">
+                                                <a href="#" class="h4 d-inline-block mb-3">Padrão de Qualidade NBR</a>
+                                                <p class="mb-0">Execução de projetos elétricos seguindo rigorosamente as normas de segurança vigentes.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="about.html" class="btn btn-secondary rounded-pill py-3 px-5">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Fact Counter -->
+        <div class="container-fluid counter py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="counter-item">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-thumbs-up fa-3x text-white"></i>
+                            </div>
+                            <h4 class="text-white my-4">Clientes Atendidos</h4>
+                            <div class="counter-counting">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">1456</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="counter-item">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-plug fa-3x text-white"></i>
+                            </div>
+                            <h4 class="text-white my-4">Instalações Concluídas</h4>
+                            <div class="counter-counting">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">200</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="counter-item">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-users fa-3x text-white"></i>
+                            </div>
+                            <h4 class="text-white my-4">Eletricistas na Equipe</h4>
+                            <div class="counter-counting">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">3</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="counter-item">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-award fa-3x text-white"></i>
+                            </div>
+                            <h4 class="text-white my-4">Anos de Experiência</h4>
+                            <div class="counter-counting">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">1</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact Counter -->
+
+        <!-- Service Start -->
+        <div class="container-fluid service bg-light overflow-hidden py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-uppercase text-primary">Nossos Serviços</h4>
+                    <h1 class="display-3 text-capitalize mb-3">Proteja Sua Família e Patrimônio com uma Elétrica Segura</h1>
+                </div>
+                <div class="row gx-0 gy-4 align-items-center">
+                    <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="service-item rounded p-4 mb-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex">
+                                        <div class="service-content text-end">
+                                            <a href="#" class="h4 d-inline-block mb-3">Elétrica Residencial</a>
+                                            <p class="mb-0">Instalação de tomadas, disjuntores, chuveiros, luminárias e troca de fiação antiga.</p>
+                                        </div>
+                                        <div class="ps-4">
+                                            <div class="service-btn"><i class="fas fa-home text-white fa-2x"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-item rounded p-4 mb-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex">
+                                        <div class="service-content text-end">
+                                            <a href="#" class="h4 d-inline-block mb-3">Elétrica Comercial</a>
+                                            <p class="mb-0">Montagem de quadros de força, automação e iluminação para escritórios e lojas.</p>
+                                        </div>
+                                        <div class="ps-4">
+                                            <div class="service-btn"><i class="fas fa-building text-white fa-2x"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-item rounded p-4 mb-0">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex">
+                                        <div class="service-content text-end">
+                                            <a href="#" class="h4 d-inline-block mb-3">Quadros de Distribuição</a>
+                                            <p class="mb-0">Montagem e adequação de quadros bifásicos e trifásicos com proteção DR e DPS.</p>
+                                        </div>
+                                        <div class="ps-4">
+                                            <div class="service-btn"><i class="fas fa-boxes text-white fa-2x"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="bg-transparent">
+                            <img src="img/water.png" class="img-fluid w-100" alt="Instalações Elétricas">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="service-item rounded p-4 mb-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex">
+                                        <div class="pe-4">
+                                            <div class="service-btn"><i class="fas fa-lightbulb text-white fa-2x"></i></div>
+                                        </div>
+                                        <div class="service-content">
+                                            <a href="#" class="h4 d-inline-block mb-3">Projetos de Iluminação</a>
+                                            <p class="mb-0">Instalação de fitas LED, spots, lustres, iluminação decorativa e externa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-item rounded p-4 mb-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex">
+                                        <div class="pe-4">
+                                            <div class="service-btn"><i class="fas fa-search-minus text-white fa-2x"></i></div>
+                                        </div>
+                                        <div class="service-content">
+                                            <a href="#" class="h4 d-inline-block mb-3">Manutenção Preventiva</a>
+                                            <p class="mb-0">Inspeção periódica para evitar sobrecargas, curtos-circuitos e desperdício de energia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-item rounded p-4 mb-0">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex">
+                                        <div class="pe-4">
+                                            <div class="service-btn"><i class="fas fa-bolt text-white fa-2x"></i></div>
+                                        </div>
+                                        <div class="service-content">
+                                            <a href="#" class="h4 d-inline-block mb-3">Protetores de Surto (DPS)</a>
+                                            <p class="mb-0">Instalação de sistemas de aterramento e proteção de eletrodomésticos contra raios.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Products Start -->
+        <div class="container-fluid product py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-uppercase text-primary">Materiais e Kits</h4>
+                    <h1 class="display-3 text-capitalize mb-3">Kits de Instalação Elétrica de Primeira Linha.</h1>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="product-item">
+                            <img src="img/product-3.png" class="img-fluid w-100 rounded-top" alt="Kit Iluminação">
+                            <div class="product-content bg-light text-center rounded-bottom p-4">
+                                <p>Kit Residencial</p>
+                                <a href="#" class="h4 d-inline-block mb-3">Troca de Disjuntores + Barramento</a>
+                                <p class="fs-4 text-primary mb-3">R$ 250,00</p>
+                                <a href="contact.html" class="btn btn-secondary rounded-pill py-2 px-4">Solicitar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="product-item">
+                            <img src="img/product-2.png" class="img-fluid w-100 rounded-top" alt="Kit Proteção">
+                            <div class="product-content bg-light text-center rounded-bottom p-4">
+                                <p>Kit Segurança</p>
+                                <a href="#" class="h4 d-inline-block mb-3">Instalação de DR + DPS Aterramento</a>
+                                <p class="fs-4 text-primary mb-3">R$ 450,00</p>
+                                <a href="contact.html" class="btn btn-secondary rounded-pill py-2 px-4">Solicitar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="product-item">
+                            <img src="img/product-1.png" class="img-fluid w-100 rounded-top" alt="Kit Iluminação LED">
+                            <div class="product-content bg-light text-center rounded-bottom p-4">
+                                <p>Kit Iluminação</p>
+                                <a href="#" class="h4 d-inline-block mb-3">Projeto LED Completo Sala/Cozinha</a>
+                                <p class="fs-4 text-primary mb-3">R$ 600,00</p>
+                                <a href="contact.html" class="btn btn-secondary rounded-pill py-2 px-4">Solicitar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Products End -->
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-uppercase text-primary">Nosso Blog</h4>
+                    <h1 class="display-3 text-capitalize mb-3">Dicas de Segurança e Economia Elétrica</h1>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-1.jpg" class="img-fluid rounded-top w-100" alt="Blog 1">
+                                <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> 12 Jan 2026</div>
+                            </div>
+                            <div class="blog-content rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-3">Como evitar curtos-circuitos no período de chuvas</a>
+                                <p>Confira os principais cuidados com a fiação e calhas para evitar vazamentos elétricos.</p>
+                                <a href="#" class="fw-bold text-secondary">Ler Mais <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-2.jpg" class="img-fluid rounded-top w-100" alt="Blog 2">
+                                <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> 15 Jan 2026</div>
+                            </div>
+                            <div class="blog-content rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-3">Por que o disjuntor cai quando liga o chuveiro?</a>
+                                <p>Entenda as causas de sobrecarga e saiba como dimensionar corretamente seus circuitos.</p>
+                                <a href="#" class="fw-bold text-secondary">Ler Mais <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-3.jpg" class="img-fluid rounded-top w-100" alt="Blog 3">
+                                <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> 20 Jan 2026</div>
+                            </div>
+                            <div class="blog-content rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-3">Dicas simples para economizar até 30% na conta de luz</a>
+                                <p>Troca de lâmpadas, uso inteligente de eletrodomésticos e revisão de fiação antiga.</p>
+                                <a href="#" class="fw-bold text-secondary">Ler Mais <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+        <!-- Team Start -->
+        <div class="container-fluid team pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-uppercase text-primary">Nossa Equipe</h4>
+                    <h1 class="display-3 text-capitalize mb-3">Eletricistas Responsáveis e Qualificados</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item p-4">
+                            <div class="team-inner rounded">
+                                <div class="team-img">
+                                    <img src="img/team-1.jpg" class="img-fluid rounded-top w-100" alt="Eletricista">
+                                    <div class="team-share">
+                                        <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href=""><i class="fas fa-share-alt"></i></a>
+                                    </div>
+                                    <div class="team-icon rounded-pill py-2 px-2">
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                                <div class="bg-light rounded-bottom text-center py-4">
+                                    <h4 class="mb-3">Carlos Silva</h4>
+                                    <p class="mb-0">Eletricista Chefe & Engenheiro</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item p-4">
+                            <div class="team-inner rounded">
+                                <div class="team-img">
+                                    <img src="img/team-2.jpg" class="img-fluid rounded-top w-100" alt="Eletricista">
+                                    <div class="team-share">
+                                        <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href=""><i class="fas fa-share-alt"></i></a>
+                                    </div>
+                                    <div class="team-icon rounded-pill py-2 px-2">
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                                <div class="bg-light rounded-bottom text-center py-4">
+                                    <h4 class="mb-3">Roberto Oliveira</h4>
+                                    <p class="mb-0">Especialista em Iluminação</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item p-4">
+                            <div class="team-inner rounded">
+                                <div class="team-img">
+                                    <img src="img/team-3.jpg" class="img-fluid rounded-top w-100" alt="Eletricista">
+                                    <div class="team-share">
+                                        <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href=""><i class="fas fa-share-alt"></i></a>
+                                    </div>
+                                    <div class="team-icon rounded-pill py-2 px-2">
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                                <div class="bg-light rounded-bottom text-center py-4">
+                                    <h4 class="mb-3">Fernando Santos</h4>
+                                    <p class="mb-0">Técnico em Instalações</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="team-item p-4">
+                            <div class="team-inner rounded">
+                                <div class="team-img">
+                                    <img src="img/team-4.jpg" class="img-fluid rounded-top w-100" alt="Eletricista">
+                                    <div class="team-share">
+                                        <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href=""><i class="fas fa-share-alt"></i></a>
+                                    </div>
+                                    <div class="team-icon rounded-pill py-2 px-2">
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-secondary btn-sm-square rounded-pill me-1" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                                <div class="bg-light rounded-bottom text-center py-4">
+                                    <h4 class="mb-3">André Souza</h4>
+                                    <p class="mb-0">Manutenção Comercial</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-uppercase text-primary">Depoimentos</h4>
+                    <h1 class="display-3 text-capitalize mb-3">O Que Dizem Nossos Clientes.</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="testimonial-item text-center p-4">
+                        <p>Excelente atendimento! O eletricista chegou no horário combinado, identificou o curto rapidamente e deixou tudo funcionando com segurança. Recomendo demais!
+                        </p>
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="img/testimonial-1.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="Cliente">
+                        </div>
+                        <div class="d-block">
+                            <h4 class="text-dark">Mariana Costa</h4>
+                            <p class="m-0 pb-3">Empresária</p>
+                            <div class="d-flex justify-content-center text-secondary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center p-4">
+                        <p>Fizeram toda a substituição da fiação antiga da minha casa. Trabalho limpo, rápido e muito profissional. Gostei muito da atenção com os disjuntores e o DR.
+                        </p>
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="img/testimonial-2.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="Cliente">
+                        </div>
+                        <div class="d-block">
+                            <h4 class="text-dark">João Pedro</h4>
+                            <p class="m-0 pb-3">Residente</p>
+                            <div class="d-flex justify-content-center text-secondary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center p-4">
+                        <p>Contratei para o projeto de iluminação da minha loja. O resultado superou as expectativas e o consumo de energia até diminuiu com os leds recomendados!
+                        </p>
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="img/testimonial-3.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="Cliente">
+                        </div>
+                        <div class="d-block">
+                            <h4 class="text-dark">Fernanda Lima</h4>
+                            <p class="m-0 pb-3">Comerciante</p>
+                            <div class="d-flex justify-content-center text-secondary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5 mb-5 align-items-center">
+                    <div class="col-lg-7">
+                        <div class="position-relative mx-auto">
+                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Digite seu e-mail para novidades">
+                            <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Cadastrar</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <div class="footer-item">
+                                <h3 class="text-white mb-4"><i class="fas fa-bolt text-primary me-3"></i>EletroPro</h3>
+                                <p class="mb-3">Soluções elétricas completas com padrão profissional, segurança em primeiro lugar e garantia total em nossos serviços.</p>
+                            </div>
+                            <div class="position-relative">
+                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Seu e-mail">
+                                <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Sobre Nós</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Por Que Nos Escolher</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Instalação Residencial</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Instalação Comercial</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Quadros de Energia</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Fale Conosco</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Termos & Condições</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Horário de Atendimento</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Segunda - Sexta:</h6>
+                                <p class="text-white mb-0">08h00 às 18h00</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Sábado:</h6>
+                                <p class="text-white mb-0">08h00 às 13h00</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Atendimento 24h:</h6>
+                                <p class="text-white mb-0">Emergências elétricas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Contato</h4>
+                            <a href="#"><i class="fa fa-map-marker-alt me-2"></i> Av. Principal, 1000, São Paulo - SP</a>
+                            <a href="mailto:contato@eletropro.com"><i class="fas fa-envelope me-2"></i> contato@eletropro.com</a>
+                            <a href="tel:+5511999999999"><i class="fas fa-phone me-2"></i> (11) 99999-9999</a>
+                            <a href="tel:+551133334444" class="mb-3"><i class="fas fa-headset me-2"></i> (11) 3333-4444</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>EletroPro</a>, Todos os direitos reservados.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                         By <a class="border-bottom text-white" href="https://htmlcodex.com">Eletropro</a> Empresa By <a class="border-bottom text-white" href="https://themewagon.com">eletrica</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
